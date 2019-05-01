@@ -7,6 +7,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'skywind3000/asyncrun.vim'
 "Plugin 'davidhalter/jedi-vim'
 
+autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
+
 call vundle#end()
 filetype plugin indent on
 syntax on
